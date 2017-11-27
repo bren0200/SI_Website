@@ -79,14 +79,14 @@ body {
 .Logo{
 	width: 100vw;
 	position: absolute;
-	top: 0;
+	top: 1.5vw;
 	left: 0;
 	height: auto;
 	z-index:-1;
 	padding-top: 0;
 }
 
-.News{
+#News{
 	background-color: #333333;
 	position: absolute;
 	line-height: 0;
