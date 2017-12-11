@@ -5,75 +5,9 @@ body {
 	display: block;
 }
 
-#NavBar ul{
-	z-index: 2;
-	list-style-type: none;
-	position: fixed;
-	top:0px;
-	margin: 0;
+ul{
 	padding: 0;
-	width: 100%;
-	background-color: #333333;
-	box-shadow: 0.3vw 0.3vw 2vw 0 rgba(0,0,0,0.5);
-}
-
-#NavBar ul li{
-	float: left;
-	width: 12%;
 	margin: 0;
-}
-
-#NavBar ul li a.NavLink{
-	color: white;
-	display: block;
-	font-size: 2vw;
-	width: 100%;
-	height: 2vw;
-	padding-top: 1vw;
-	padding-bottom: 1vw;
-	text-align: center;
-	font-family: sans-serif;
-	text-decoration: none;
-}
-
-#NavBar ul li.active{
-	background-color: #407CCE;
-}
-
-#NavBar ul li:hover:not(.active){
-	background-color: black;
-}
-
-#NavBar ul li.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-#NavBar ul li.dropdown:hover .dropdown-content {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #c1cce6;
-    width: 100%;
-	height: 3vw;
-    box-shadow: 0.3vw 0.3vw 2vw 0 rgba(0,0,0,0.5);
-    z-index: 1;
-	box-sizing: border-box;
-}
-
-.dropdown-content a {
-	display: block;
-	position: absolute;
-	font-size: 1.3vw;
-	font-family: sans-serif;
-	font-weight: bold;
-	color: black;
-	top: 25%;
-	left: 25%;
-	text-decoration: none;
 }
 
 .Logo{
@@ -86,54 +20,185 @@ body {
 	padding-top: 0;
 }
 
-#News{
-	background-color: #333333;
-	position: absolute;
-	line-height: 0;
-	top: 42vw;
-	width: 100%;
-	height: 5vw;
-	text-align: center;
-	font-size: 2.5vw;
-	color: white;
-	text-shadow: 0.2vw 0.2vw 1vw rgba(0,0,0,1);
-	font-family: sans-serif;
-}
-#Articles ul{
-	position: absolute;
-	top: 50vw;
-	width: 100%;
-	text-align: center;
-	padding: 0;
-}
+@media only screen and (min-width: 725px){
+	body {
+		background-color: rgba(40,78,130,255);
+		margin: 0;
+		padding: 0;
+		display: block;
+	}
 
-.InfoCard {
-	vertical-align: top;
-	display: inline-block;
-	width: 30%;
-	height: 30vw;
-	list-style: none;
-	background-color: #eeeeee;
-	border: 0.1vw solid black;
-	border-radius: 0.4vw;
-	box-shadow: 0.2vw 0.2vw 1vw;
-	overflow:hidden;
-}
+	#NavBar ul{
+		z-index: 2;
+		list-style-type: none;
+		position: fixed;
+		top:0px;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		background-color: #333333;
+		box-shadow: 0.3vw 0.3vw 2vw 0 rgba(0,0,0,0.5);
+	}
 
-.InfoCard:hover{
-	transform: scale(1.05);
-}
+	#NavBar ul li{
+		float: left;
+		width: 12%;
+		margin: 0;
+	}
 
-.InfoCard p{
-	font-size: 1vw;
-	text-overflow: ellipsis;
-}
+	#NavBar ul li a.NavLink{
+		color: white;
+		display: block;
+		font-size: 2vw;
+		width: 100%;
+		height: 2vw;
+		padding-top: 1vw;
+		padding-bottom: 1vw;
+		text-align: center;
+		font-family: sans-serif;
+		text-decoration: none;
+	}
 
-footer{
-	display: block;
-	position: relative;
-	top: 90vw;
-	border-top: 0.1vw solid white;
-	background-color: #555555;
-	padding-bottom: 2vw;
+	#NavBar ul li.active{
+		background-color: #407CCE;
+	}
+
+	#NavBar ul li:hover:not(.active){
+		background-color: black;
+	}
+
+	#NavBar ul li.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+
+	#NavBar ul li.dropdown:hover .dropdown-content {
+		display: inline-block;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #c1cce6;
+		width: 100%;
+		height: 3vw;
+		box-shadow: 0.3vw 0.3vw 2vw 0 rgba(0,0,0,0.5);
+		z-index: 1;
+		box-sizing: border-box;
+	}
+
+	.dropdown-content a {
+		display: block;
+		position: absolute;
+		font-size: 1.3vw;
+		font-family: sans-serif;
+		font-weight: bold;
+		color: black;
+		top: 25%;
+		left: 25%;
+		text-decoration: none;
+	}
+
+	.Logo{
+		width: 100%;
+		position: absolute;
+		top: 1.5vw;
+		left: 0;
+		height: auto;
+		z-index:-1;
+		padding-top: 0;
+	}
+
+	#News{
+		background-color: #333333;
+		position: absolute;
+		line-height: 0;
+		top: 42vw;
+		width: 100%;
+		height: 5vw;
+		text-align: center;
+		font-size: 2.5vw;
+		color: white;
+		text-shadow: 0.2vw 0.2vw 1vw rgba(0,0,0,1);
+		font-family: sans-serif;
+	}
+	#Articles ul{
+		position: absolute;
+		top: 50vw;
+		width: 100%;
+		text-align: center;
+		padding: 0;
+	}
+
+	.InfoCard {
+		vertical-align: top;
+		display: inline-block;
+		width: 30%;
+		height: 30vw;
+		list-style: none;
+		background-color: #eeeeee;
+		border: 0.1vw solid black;
+		border-radius: 0.4vw;
+		box-shadow: 0.2vw 0.2vw 1vw;
+		overflow: hidden;
+	}
+
+	.InfoCard:hover{
+		transform: scale(1.05);
+	}
+
+	.InfoCard p{
+		font-size: 1vw;
+		text-overflow: ellipsis;
+	}
+	
+	#Connect{
+		background-color: #333333;
+		position: absolute;
+		line-height: 0;
+		top: 87vw;
+		width: 100%;
+		height: 12vw;
+		text-align: center;
+		align-items: center;
+		font-size: 2.5vw;
+		color: white;
+		text-shadow: 0.2vw 0.2vw 1vw rgba(0,0,0,1);
+		font-family: sans-serif;
+	}
+	
+	.IconLink{
+		color: white;
+		text-decoration: none;
+		text-decoration-color: white;
+	}
+	
+	.Scale{
+		font-size: 2vw;
+	}
+	
+	.MediaIcons{
+		font-size: 4vw;
+		padding-left: 1vw;
+		padding-right: 1vw;
+	}
+	
+	.MediaIcons:hover{
+		transform: scale(1.25);
+	}
+	
+	footer{
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 105vw;
+		border-top: 0.1vw solid white;
+		background-color: #555555;
+		padding-bottom: 1vw;
+	}
+	
+	footer p{
+		text-align: center;
+	}
 }
